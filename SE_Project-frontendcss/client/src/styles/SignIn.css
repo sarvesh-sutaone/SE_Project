@@ -1,0 +1,56 @@
+.SignIn {
+    background-color: #121619;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .SignInTop {
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .SignInBottom {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .SignIn .SignInBottom img {
+    width: 250px
+  }
+
+  .SignInBottom p {
+    width: 1200px;
+  }
+  
+  .SignIn .SignInBottom h1 {
+    font-weight: 500;
+    font-size: 70px;
+    color: white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+  }
+
+  .SignIn .SignInBottom button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: black;
+    height: 60px;
+    width: 350px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
