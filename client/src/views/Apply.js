@@ -62,7 +62,7 @@ const Apply = () => {
       }
 
   return (
-    <div className="container mt-3">
+    <div>
     <div className="row justify-content-between align-items-center mb-3">
         <div className="col-auto">
           <button className="btn btn-link" onClick={goBack}>
