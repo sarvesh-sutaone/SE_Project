@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
 import '../views/styles.css';
+import '../views/global.css';
+
 
 
 const Navbar = () => {

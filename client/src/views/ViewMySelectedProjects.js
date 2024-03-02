@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import '../views/view_selected.css';
 import { BsChevronLeft } from "react-icons/bs";
 import Navbar from "./NavbarHandlers.js";
+import '../views/global.css';
+
 
 
 

@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BsChevronLeft } from "react-icons/bs";
 import '../views/applications.css';
 import Navbar from "./NavbarHandlers.js";
-
+import '../views/global.css';
 
 
 

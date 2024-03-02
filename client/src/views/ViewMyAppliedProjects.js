@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { BsChevronLeft } from "react-icons/bs";
 import '../views/view_applied.css';
 import Navbar from "./NavbarHandlers.js";
+import '../views/global.css';
+
 
 
 const ViewMyAppliedProjects = () => {

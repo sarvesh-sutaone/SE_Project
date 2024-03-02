@@ -4,6 +4,8 @@ import axios from "axios";
 import { BsChevronLeft } from "react-icons/bs";
 import '../views/apply.css';
 import Navbar from "./NavbarHandlers.js";
+import '../views/global.css';
+
 
 
 

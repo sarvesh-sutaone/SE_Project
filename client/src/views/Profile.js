@@ -5,6 +5,8 @@ import '../views/profile.css';
 import Upload from '../components/Upload';
 import { BsChevronLeft } from "react-icons/bs";
 import Navbar from "./NavbarHandlers.js";
+import '../views/global.css';
+
 
 
 const Profile = () => {

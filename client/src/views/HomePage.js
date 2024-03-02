@@ -7,6 +7,8 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import '../views/HomePage.css';
 import '../views/nav.css';
 import Navbar from "./NavbarHandlers.js";
+import '../views/global.css';
+
 
 function Home() {
   const navigate = useNavigate();
