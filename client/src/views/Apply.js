@@ -63,7 +63,7 @@ const Apply = () => {
       }
 
   return (
-    <div>
+    <div className="apply-form">
     <div className="d-flex justify-content-between align-items-left mb-3">
         <div className="col-auto">
           <button className="btn btn-link" onClick={goBack}>
@@ -78,7 +78,7 @@ const Apply = () => {
       </div> 
       <form onSubmit={handleSubmit} className="apply-form2">
   <h1>Apply for the Project {title}</h1>
-  <div className="form-group2">
+  <div>
     <label className="form-label2">SOP: Your Proposal to help your candidature:</label>
     <textarea
       value={proposal}

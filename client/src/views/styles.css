@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items:left;
-  padding: 100px;/*padding of whole form*/
+  padding: 80px;/*padding of whole form*/
   margin-left: 200px; /* Add padding to the whole form */
 }
 
@@ -57,21 +57,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-textarea {
-  height: 80px; /* Adjust height as needed */
+  height: 60px; /* Adjust height as needed */
 }
 
 .desc-textarea {
-  height: 200px; /* Adjust height as needed */
+  height: 180px; /* Adjust height as needed */
 }
 
 .pay-textarea {
   height: 60px; /* Adjust height as needed */
   width: fit-content;
+  border-radius: 12px;
 }
 
 .duration-textarea {
   height: 60px; /* Adjust height as needed */
   width: fit-content;
+  border-radius: 12px;
+
 
 }
 

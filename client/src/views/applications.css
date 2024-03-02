@@ -1,0 +1,136 @@
+.select-container {
+    padding-left: 300px; /* Adjust padding as needed */
+    padding-right: 300px; /* Adjust padding as needed */
+
+  }
+  
+
+
+body {
+    font-family: 'Gilroy', sans-serif; 
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gilroy-Bold', sans-serif; /* Apply Gilroy font to all headings */
+  }
+  
+  .apply-form3 {
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    padding: 100px;/*padding of whole form*/
+  }
+  
+  .apply-form h1 {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 18px;
+  }
+  
+  .form-control {
+    width: 80%;
+    height: 150px;
+    padding: 20px; /* Adjust padding for form fields */
+    background: #E7EEF3;
+    border-radius: 16px;
+    border: none;
+    resize: vertical; 
+  }
+  
+  .title-textarea {
+    height: 60px; /* Adjust height as needed */
+  }
+  
+  .desc-textarea {
+    height: 180px; /* Adjust height as needed */
+  }
+  
+  .pay-textarea {
+    height: 60px; /* Adjust height as needed */
+    width: fit-content;
+    border-radius: 12px;
+  }
+  
+  .duration-textarea {
+    height: 60px; /* Adjust height as needed */
+    width: fit-content;
+    border-radius: 12px;
+  
+  
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+  .d-flex .form-control {
+    /* Additional styling for the input field */
+    width: auto;
+    height: 30px; /* Adjust width as needed */
+  }
+  
+  .d-flex .btn {
+    /* Additional styling for the remove button */
+    margin-left: 20px; /* Adjust margin as needed */
+   
+  }
+
+  .heading{
+   align-self: center;
+   margin-left: 0; /* Reset left margin */
+}
+
+  .custom-select {
+    /* Add your custom styling here */
+    /* For example: */
+    background-color: rgb(158, 129, 255); /* Change button color on hover */
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 18px;
+    width: 100%;
+    /* Add more styles as needed */
+  }
+  
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #2d0064;
+    border-radius: 24px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  }
+  
+  .card-body {
+    font-family: 'Gilroy', sans-serif; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+  }
+  
+  .card-body p {
+    font-family: 'Gilroy', sans-serif; /* Apply Gilroy font to all headings */
+
+    margin: 10px 0; /* Adjust spacing between paragraphs */
+  }
+  
+  .sel {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items vertically to the center */
+    padding-top: 30px;
+  }
+  

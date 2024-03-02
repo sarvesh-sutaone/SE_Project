@@ -26,7 +26,9 @@
   
   .form-group2 {
     width: 100%;
-    margin-bottom: 40px;
+   
+
+
   }
   
   .form-label2 {
@@ -46,24 +48,7 @@
  
   
   
-  .title-textarea {
-    height: 80px; /* Adjust height as needed */
-  }
-  
-  .desc-textarea {
-    height: 200px; /* Adjust height as needed */
-  }
-  
-  .pay-textarea {
-    height: 60px; /* Adjust height as needed */
-    width: fit-content;
-  }
-  
-  .duration-textarea {
-    height: 60px; /* Adjust height as needed */
-    width: fit-content;
-  
-  }
+
   
   .d-flex {
     display: flex;
