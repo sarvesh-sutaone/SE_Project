@@ -50,7 +50,7 @@ const Navbar = () => {
       <div className="container-fluid">
       <a className="navbar-brand" href="#" onClick={() => navigate('/home')}>
           <span style={{
-            fontFamily: 'Space Quest',
+            fontFamily: 'SpaceQuest',
             fontStyle: 'normal',
             fontWeight: 400,
             fontSize: '36px',
