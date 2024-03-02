@@ -1,0 +1,129 @@
+/* styles.css */
+
+
+  
+  body {
+    font-family: 'Gilroy', sans-serif; 
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gilroy-Bold', sans-serif; /* Apply Gilroy font to all headings */
+  }
+  
+  .apply-form2 {
+    
+    flex-direction: column;
+    align-items:center;
+    padding: 100px;/*padding of whole form*/
+  }
+  
+  .apply-form2 h1 {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 48px;
+    margin-bottom: 40px;
+    margin-left: auto;
+  }
+  
+  .form-group2 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .form-label2 {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 24px;
+  }
+  
+  .form-control2 {
+    width: 80%;
+    height: 300px;
+    padding: 20px; /* Adjust padding for form fields */
+    background: #E7EEF3;
+    border-radius: 24px;
+    border: none;
+  }
+  
+ 
+  
+  
+  .title-textarea {
+    height: 80px; /* Adjust height as needed */
+  }
+  
+  .desc-textarea {
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  .pay-textarea {
+    height: 60px; /* Adjust height as needed */
+    width: fit-content;
+  }
+  
+  .duration-textarea {
+    height: 60px; /* Adjust height as needed */
+    width: fit-content;
+  
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+  .d-flex .form-control {
+    /* Additional styling for the input field */
+    width: auto;
+    height: 30px; /* Adjust width as needed */
+  }
+  
+  .d-flex .btn {
+    /* Additional styling for the remove button */
+    margin-left: 20px; /* Adjust margin as needed */
+   
+  }
+  .btn1 {
+    color: #fff; /* Button text color */
+    background-color: rgb(158, 129, 255); /* Change button color on hover */
+    padding: 10px 20px; /* Adjust padding as needed button size */
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    max-width: 160px;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    display: block;
+   
+  }
+  
+  .btn1:hover {
+    background-color: rgb(143, 57, 255); /* Change button color on hover */
+    color: #fff; /* Button text color */
+  
+  }
+  
+  .btn2 {
+    color: #fff; /* Button text color */
+    background-color: rgb(58, 150, 255); /* Change button color on hover */
+    padding: 10px 20px; /* Adjust padding as needed button size */
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    max-width: 160px;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    display: block;
+   
+  }
+  
+  .btn2:hover {
+    background-color: rgb(35, 98, 255); /* Change button color on hover */
+    color: #fff; /* Button text color */
+  
+  }

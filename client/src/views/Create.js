@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BsChevronLeft } from "react-icons/bs";
-import '../views/create.css';
+import '../views/styles.css';
 
 
 
@@ -146,23 +146,28 @@ const Create = () => {
           ></textarea>
         </div>
         <div className="mb-3">
-          <label className="form-label">Pay:</label>
-          <input
-            type="number"
-            className="form-control pay-textarea"
-            value={pay}
-            onChange={(e) => setPay(e.target.value)}
-          />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Duration:</label>
-          <input
-            type="number"
-            className="form-control duration-textarea"
-            value={duration}
-            onChange={(e) => setDuration(e.target.value)}
-          />
-        </div>
+  <div className="d-flex">
+    <div className="me-3">
+      <label className="form-label">Pay:</label>
+      <input
+        type="number"
+        className="form-control pay-textarea"
+        value={pay}
+        onChange={(e) => setPay(e.target.value)}
+      />
+    </div>
+    <div>
+      <label className="form-label">Duration:</label>
+      <input
+        type="number"
+        className="form-control duration-textarea"
+        value={duration}
+        onChange={(e) => setDuration(e.target.value)}
+      />
+    </div>
+  </div>
+</div>
+
         <div className="mb-3">
         <label className="form-label skills-textarea">Skills:</label>
         {skills.map((skill, index) => (
