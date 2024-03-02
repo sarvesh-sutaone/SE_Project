@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BsChevronLeft } from "react-icons/bs";
 import '../views/view_applied.css';
+import Navbar from "./NavbarHandlers.js";
+
 
 const ViewMyAppliedProjects = () => {
   const navigate = useNavigate();
@@ -36,6 +38,8 @@ const ViewMyAppliedProjects = () => {
 
   return (
     <div>
+      <Navbar/>
+      <div className="apply-form3">
       <div className="row justify-content-between align-items-center mb-5 left-margin">
         <div className="col-auto">
           <button className="btn btn-link" onClick={goBack}>
@@ -49,12 +53,12 @@ const ViewMyAppliedProjects = () => {
         </div> */}
       </div>
 
-      <h1>Your Applied Projects</h1>
+      <h1 class="with-margin1">Your Applied Projects</h1>
 
-      <div className="container">
+      <div>
         {projects.length > 0 ? (
           projects.map((prj) => (
-            <div key={prj._id} className="project-item1">
+            <div key={prj._id} className="project-item2">
               <div className="project-item-content1">
                 <h3>{prj.title}</h3>
                 <p>{prj.description}</p>
@@ -91,6 +95,7 @@ const ViewMyAppliedProjects = () => {
           <p>You have not applied to any projects yet. Keep searching for your passion :)</p>
         )}
       </div>
+    </div>
     </div>
   );
 };

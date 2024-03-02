@@ -203,7 +203,7 @@ transform: translate(-50%, -50%); /* Center the content */
     padding-right: 1rem;
     padding: 3rem;
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight:regular;
     color: #21003a;
 
@@ -213,7 +213,7 @@ transform: translate(-50%, -50%); /* Center the content */
 
 
   .project-item h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     margin-top: 0;
@@ -228,7 +228,9 @@ transform: translate(-50%, -50%); /* Center the content */
   }
   
   .project-item .skills .badge {
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+
   }
   
   .apply-btn-container {

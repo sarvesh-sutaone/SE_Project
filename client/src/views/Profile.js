@@ -4,6 +4,8 @@ import axios from "axios";
 import '../views/profile.css';
 import Upload from '../components/Upload';
 import { BsChevronLeft } from "react-icons/bs";
+import Navbar from "./NavbarHandlers.js";
+
 
 const Profile = () => {
     const [editMode,setEditMode] =useState(false);
@@ -124,6 +126,9 @@ const Profile = () => {
       };
 
   return (
+    <div>
+      <Navbar/>
+    <div className='apply-form3'>
     <div className="d-flex justify-content-between align-items-left mb-3">
     <div className="col-auto"  style={{ paddingRight: '800px', backgroundColor: '#fff' }}>
      <button className="btn btn-link" onClick={goBack}>
@@ -161,27 +166,27 @@ const Profile = () => {
         <span>{userData.batch_year}</span>
         </div>
 
-      <div>
-      
-        {editMode ? (
-            <span>
-            <Upload handleUpload={handleUpload} saveBtn_State={setDisable}/>
-          </span>
-        ) : (
-            <button onClick={() => window.open(userData.resume_link, '_blank')}>Resume</button>
-        )}
-      </div>
-
-
+        <div className="button-container">
+  {editMode ? (
+    <span>
+      <Upload handleUpload={handleUpload} saveBtn_State={setDisable}/>
+    </span>
+  ) : (
+    <button onClick={() => window.open(userData.resume_link, '_blank')}>Resume</button>
+  )}
   
-      {editMode ? (
-        <div>
-          <button onClick={handleSave} disabled={Save_active}>Save</button>
-          <button onClick={handleCancel}>Cancel</button>
-        </div>
-      ) : (
-        <button onClick={handleEdit}>Edit</button>
-      )}
+  {editMode ? (
+    <div className="right">
+      <button onClick={handleSave} disabled={Save_active}>Save</button>
+      <button onClick={handleCancel}>Cancel</button>
+    </div>
+  ) : (
+    <button onClick={handleEdit}>Edit</button>
+  )}
+</div>
+
+    </div>
+    </div>
     </div>
     </div>
     

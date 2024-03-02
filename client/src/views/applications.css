@@ -1,6 +1,5 @@
 .select-container {
-    padding-left: 300px; /* Adjust padding as needed */
-    padding-right: 300px; /* Adjust padding as needed */
+    
 
   }
   
@@ -18,7 +17,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items:left;
-    padding: 100px;/*padding of whole form*/
+    padding-left: 300px;/*padding of whole form*/
+    padding-right: 300px;/*padding of whole form*/
+    padding-top: 100px;/*padding of whole form*/
+
+
+
   }
   
   .apply-form h1 {
@@ -89,10 +93,7 @@ body {
    
   }
 
-  .heading{
-   align-self: center;
-   margin-left: 0; /* Reset left margin */
-}
+
 
   .custom-select {
     /* Add your custom styling here */
@@ -134,3 +135,8 @@ body {
     padding-top: 30px;
   }
   
+
+  p.c{
+    text-align: center;
+    margin-left: 10px;
+  }

@@ -98,8 +98,8 @@ function Home() {
         </div>
       </div>
 
-      <div className="container mt-4 text-center" id="projects-section">
-      <div className="projects-heading-container" style={{ padding: '20px' }}>
+      <div className="container mt-4 text-center" id="projects-section" style={{ margin: 'auto', maxWidth: '1200px' }}>
+      <div className="projects-heading-container" style={{ padding: '40px' }}>
   <h1 style={{ fontWeight: 600, fontFamily: 'Clash Display Variable', fontSize: '60px' }}>PROJECTS</h1>
 </div>
   <div className="project-container"> 
@@ -117,7 +117,7 @@ function Home() {
                 <div className="skills">
                   <ul className="list-inline">
                     {prj.skills.map((skill, index) => (
-                      <li key={index} className="badge me-1" style={{ backgroundColor: '#F5F2F7', borderRadius: '160px', color:'#64556D', fontSize:'2rem', fontWeight:'lighter'}}>{skill}</li>
+                      <li key={index} className="badge me-1" style={{ backgroundColor: '#F5F2F7', borderRadius: '160px', color:'#64556D', fontSize:'1.5rem', fontWeight:'lighter'}}>{skill}</li>
                     ))}
                   </ul>
                 </div>

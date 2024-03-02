@@ -52,11 +52,10 @@
     margin-top: auto; /* Align the button to the bottom */
   }
   
-  h1 {
-    margin-left: 100px;
+  h1.with-margin1{
+    text-align: center;
+    padding: 2%;
     /* Adjust the value as needed */
   }
 
-  .left-margin {
-    margin-left: 80px; /* Adjust the value as per your requirement */
-  }
+ 

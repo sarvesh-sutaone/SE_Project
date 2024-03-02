@@ -5,11 +5,9 @@
     font-family: 'Gilroy', sans-serif; 
     font-size: medium;
     padding: 80px;
-    max-width: 1000px;
-    margin: 0 auto;
     position: absolute;
-    width: 100%; /* Adjust width as needed */
-    height: 80vh; /* Adjust height as needed */
+    width: 60%; /* Adjust width as needed */
+    height: 60vh; /* Adjust height as needed */
     background: linear-gradient(180deg, #4f24ac30 0%, rgba(14, 1, 42, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(42, 3, 47, 0));
     border-radius:60px; /* Adjust border-radius as needed */
@@ -17,12 +15,13 @@
     top: 50%; /* Adjust vertical position */
     left: 50%; /* Adjust horizontal position */
     transform: translate(-50%, -50%); /* Center the overlay */
+    margin-top: 3%;
 
   }
   
 
   .profile-container h2 {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #2c0157;
@@ -32,7 +31,7 @@
   .profile-container label {
     font-family: 'Gilroy', sans-serif; 
 
-    font-size: 36px;
+    font-size: 30px;
      font-weight:600;
     margin-right: 10px;
     color: #412c56;
@@ -40,18 +39,18 @@
   
   .profile-container input[type="text"] {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 18px;
     border: 1px solid #190134;
-    border-radius: 24px;
+    border-radius: 16px;
   }
   
   .profile-container span {
     display: inline-block;
     margin-bottom: 20px;
-    font-size:36px;
+    font-size:24px;
     color: #76608d;  }
 
 
@@ -65,8 +64,8 @@
     cursor: pointer;
     transition: background-color 0.3s;
     border: none;
-    margin-top: 30px;
-    font-size: 24px;
+    margin-top: 20px;
+    font-size: 16px;
   }
   
   .profile-container button:hover {
@@ -131,6 +130,26 @@
     color: rgb(141, 249, 141);
     margin-top: 10px;
   }
+
+  
+  .button-container {
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Adjust padding as needed button size */
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    max-width: 160px;
+    margin-bottom: 20px;
+    border: none;
+    display: block;
+    position: relative;
+  }
+  
+  .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
   
 
 

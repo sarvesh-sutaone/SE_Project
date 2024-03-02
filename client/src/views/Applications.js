@@ -4,6 +4,8 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsChevronLeft } from "react-icons/bs";
 import '../views/applications.css';
+import Navbar from "./NavbarHandlers.js";
+
 
 
 
@@ -124,6 +126,8 @@ const Applications = () => {
   };
 
   return (
+    <div>
+      <Navbar/>
     <div className="apply-form3">
       <div className="d-flex justify-content-between align-items-left mb-3">
         <button className="btn btn-link" onClick={goBack}>
@@ -131,9 +135,8 @@ const Applications = () => {
         </button>
         {/* <button className="btn btn-danger" onClick={logout}>Logout</button> */}
       </div>
-      <div className="heading">
-        <h1>Applications Page</h1>
-      </div>
+        <h1 className="with-margin1">Applications Page</h1>
+      
       {projects.length > 0 ? (
         <div className="select-container">
           <div>
@@ -163,7 +166,7 @@ const Applications = () => {
                   ))}
                 </div>
               ) : (
-                <p>No Selected Applications Found</p>
+                <p className="c">No Selected Applications Found</p>
               )}
             </div>
             <div className="sel">
@@ -173,15 +176,17 @@ const Applications = () => {
                   {proposals.map((propo) => (
                     <div key={propo._id} className="card mb-2">
                       <div className="card-body">
-                        <p>Name: {propo.name} &nbsp; Email: {propo.email}</p>
-                        <p>Graduation Year: {propo.batch_year} &nbsp; Resume link: {propo.resume_link}</p>
+                        <p>Name: {propo.name} </p>
+                        <p>Email: {propo.email}</p>
+                        <p>Graduation Year: {propo.batch_year}</p>
+                        <p>Resume link: {propo.resume_link}</p>
                         <button className="btn btn-success" onClick={() => SelectUser(propo._id)}>Yes</button>
                       </div>
                     </div>
                   ))}
                 </div>
               ) : (
-                <p>No Applications Found</p>
+                <p className="c">No Applications Found</p>
               )}
             </div>
           </div>
@@ -189,6 +194,7 @@ const Applications = () => {
       ) : (
         <p>No projects found</p>
       )}
+    </div>
     </div>
   );
 };

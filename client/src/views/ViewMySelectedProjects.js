@@ -3,6 +3,8 @@ import React,{useEffect,useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../views/view_selected.css';
 import { BsChevronLeft } from "react-icons/bs";
+import Navbar from "./NavbarHandlers.js";
+
 
 
 
@@ -40,7 +42,9 @@ const ViewMySelectedProjects = () => {
       };
 
   return (
-<div>
+    <div>
+    <Navbar/>
+    <div className="apply-form3">
 <div className="row justify-content-between align-items-center mb-5 left-margin">
         <div className="col-auto">
           <button className="btn btn-link" onClick={goBack}>
@@ -49,12 +53,12 @@ const ViewMySelectedProjects = () => {
         </div>
         </div>    
         
-          <h1 className="left-margin">Your Current Projects</h1>
+          <h1 className="with-margin2">Your Current Projects</h1>
       <div>
         {projects.length > 0 ? (
           projects.map((prj) => (
             <div key={prj._id} className="project-item2">
-              <div className="project-item-content2">
+              <div className="project-item-content1">
                 <h3>{prj.title}</h3>
                 <p>{prj.description}</p>
                 <p>
@@ -90,6 +94,7 @@ const ViewMySelectedProjects = () => {
           <p>Sorry! You have not been spotted yet.</p>
         )}
       </div>
+    </div>
     </div>
   );
 };

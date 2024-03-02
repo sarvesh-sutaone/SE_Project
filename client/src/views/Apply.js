@@ -3,6 +3,8 @@ import { useParams,useNavigate } from 'react-router-dom';
 import axios from "axios";
 import { BsChevronLeft } from "react-icons/bs";
 import '../views/apply.css';
+import Navbar from "./NavbarHandlers.js";
+
 
 
 const Apply = () => {
@@ -63,7 +65,9 @@ const Apply = () => {
       }
 
   return (
-    <div className="apply-form">
+    <div>
+      <Navbar/>
+    <div className="apply-form3">
     <div className="d-flex justify-content-between align-items-left mb-3">
         <div className="col-auto">
           <button className="btn btn-link" onClick={goBack}>
@@ -91,6 +95,7 @@ const Apply = () => {
   </button>
 </form>
 
+    </div>
     </div>
   )
 }

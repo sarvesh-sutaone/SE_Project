@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <nav id="navbar" className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#130525' }}>
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+      <a className="navbar-brand" href="#" onClick={() => navigate('/home')}>
           <span style={{
             fontFamily: 'Space Quest',
             fontStyle: 'normal',
