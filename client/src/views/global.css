@@ -28,3 +28,8 @@
     src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
   }
   
+  @font-face {
+    font-family: 'Space Quest';
+    src: url('../fonts/Space\ Quest.ttf') format('truetype');
+  }
+  
