@@ -1,7 +1,4 @@
-.select-container {
-    
 
-  }
   
 
 
@@ -139,4 +136,11 @@ body {
   p.c{
     text-align: center;
     margin-left: 10px;
+  }
+
+  .yes{
+    display: flex;
+    justify-content: center;
+   
+    
   }

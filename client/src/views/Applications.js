@@ -160,7 +160,7 @@ const Applications = () => {
                       <p>Name: {selProp.name}</p>
                       <p>Email: {selProp.email}</p>
                       <p>Graduation Year: {selProp.batch_year}</p>
-                      <p>Resume link: {selProp.resume_link}</p>
+                      <p><button className="btn btn-success" onClick={() => window.open(selProp.resume_link, '_blank')}>Resume</button></p>
                     </div>
                     </div>
                   ))}
@@ -179,9 +179,9 @@ const Applications = () => {
                         <p>Name: {propo.name} </p>
                         <p>Email: {propo.email}</p>
                         <p>Graduation Year: {propo.batch_year}</p>
-                        <p>Resume link: {propo.resume_link}</p>
-                        <button className="btn btn-success" onClick={() => SelectUser(propo._id)}>Yes</button>
-                      </div>
+                        <p><button className="btn btn-success" onClick={() => window.open(propo.resume_link, '_blank')}>Resume</button></p>
+                        <p className="yes"><button className="btn btn-success" onClick={() => SelectUser(propo._id)}>Yes</button></p>            
+                    </div>
                     </div>
                   ))}
                 </div>
