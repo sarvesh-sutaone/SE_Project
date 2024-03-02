@@ -87,9 +87,10 @@
     max-width: 160px;
     transition: background-color 0.3s; /* Add transition for smooth hover effect */
     margin-top: 20px;
+    margin-bottom: 20px;
+
     display: block;
-    margin-left: auto; /* Align horizontally to center */
-    margin-right: auto;
+   
   }
   
   .btn:hover {

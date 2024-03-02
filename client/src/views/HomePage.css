@@ -149,9 +149,13 @@ transform: translate(-50%, -50%); /* Center the content */
   }
   
 
-
+  .projects-heading-container{
+    flex: auto;
+    align-content: center;
+  }
   
- 
+  
+
 
   
   .navbar {

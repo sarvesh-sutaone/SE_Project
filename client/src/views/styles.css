@@ -22,57 +22,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Gilroy-Bold', sans-serif; /* Apply Gilroy font to all headings */
 }
 
-/* Form Heading */
-.form-heading {
-  font-family: 'Gilroy-SemiBold', sans-serif;
-  font-size: 1.5rem; /* Adjust as needed */
-  margin-bottom: 1rem;
-}
-
-/* Form Fields */
-.form-control {
-  background-color: #E7EEF3;
-  border: none;
-  border-radius: 10px;
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
-  font-family: inherit;
-  font-size: 1rem; /* Adjust as needed */
-  width: 100%; /* Ensure fields take up full width */
-  box-sizing: border-box; /* Ensure padding and border are included in width */
-}
-
-/* Adjustments for Textarea */
-textarea.form-control {
-  height: 12
-0px; /* Adjust height for textarea */
-  resize: vertical; /* Allow vertical resizing */
-}
-
-/* Adjustments for Button */
-button.btn-submit {
-  background-color: #4CAF50; /* Green */
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 16px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-family: inherit;
-}
-
-button.btn-submit:hover {
-  background-color: #a04592; /* apply */
-}
-
-/* Optional: Add additional styles for focus, hover, etc. */
-
-
-
-
 .apply-form {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items:left;
+  padding: 100px;/*padding of whole form*/
+  margin-left: 200px; /* Add padding to the whole form */
 }
 
 .apply-form h1 {
@@ -92,13 +47,13 @@ button.btn-submit:hover {
 }
 
 .form-control {
-  width: 100%;
+  width: 80%;
   height: 150px;
-  padding: 60px;
+  padding: 20px; /* Adjust padding for form fields */
   background: #E7EEF3;
   border-radius: 16px;
   border: none;
-  resize: vertical;
+  resize: vertical; 
 }
 
 .btn-submit {
@@ -115,4 +70,87 @@ button.btn-submit:hover {
 
 .btn-submit:hover {
   background-color: #a08e45;
+}
+
+
+.title-textarea {
+  height: 80px; /* Adjust height as needed */
+}
+
+.desc-textarea {
+  height: 200px; /* Adjust height as needed */
+}
+
+.pay-textarea {
+  height: 60px; /* Adjust height as needed */
+  width: fit-content;
+}
+
+.duration-textarea {
+  height: 60px; /* Adjust height as needed */
+  width: fit-content;
+
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.d-flex .form-control {
+  /* Additional styling for the input field */
+  width: auto;
+  height: 30px; /* Adjust width as needed */
+}
+
+.d-flex .btn {
+  /* Additional styling for the remove button */
+  margin-left: 20px; /* Adjust margin as needed */
+ 
+}
+.btn1 {
+  color: #fff; /* Button text color */
+  background-color: rgb(158, 129, 255); /* Change button color on hover */
+  padding: 10px 20px; /* Adjust padding as needed button size */
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 160px;
+  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  display: block;
+ 
+}
+
+.btn1:hover {
+  background-color: rgb(143, 57, 255); /* Change button color on hover */
+  color: #fff; /* Button text color */
+
+}
+
+.btn2 {
+  color: #fff; /* Button text color */
+  background-color: rgb(58, 153, 255); /* Change button color on hover */
+  padding: 10px 20px; /* Adjust padding as needed button size */
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 160px;
+  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  display: block;
+ 
+}
+
+.btn2:hover {
+  background-color: rgb(35, 98, 255); /* Change button color on hover */
+  color: #fff; /* Button text color */
+
 }
