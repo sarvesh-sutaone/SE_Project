@@ -160,7 +160,7 @@ const Applications = () => {
                       <p>Name: {selProp.name}</p>
                       <p>Email: {selProp.email}</p>
                       <p>Graduation Year: {selProp.batch_year}</p>
-                      <p><button className="btn btn-success" onClick={() => window.open(selProp.resume_link, '_blank')}>Resume</button></p>
+                      <p><button className="btn2 btn-success" style={{backgroundColor:'white',color:'black',border:'1px solid black',fontSize:'16px'}}onClick={() => window.open(selProp.resume_link, '_blank')}>Resume</button></p>
                     </div>
                     </div>
                   ))}
@@ -179,8 +179,8 @@ const Applications = () => {
                         <p>Name: {propo.name} </p>
                         <p>Email: {propo.email}</p>
                         <p>Graduation Year: {propo.batch_year}</p>
-                        <p><button className="btn btn-success" onClick={() => window.open(propo.resume_link, '_blank')}>Resume</button></p>
-                        <p className="yes"><button className="btn btn-success" onClick={() => SelectUser(propo._id)}>Yes</button></p>            
+                        <p><button className="btn2 btn-success" style={{backgroundColor:'white',color:'black',border:'1px solid black',fontSize:'16px'}}onClick={() => window.open(propo.resume_link, '_blank')}>Resume</button></p>
+                        <p className="yes"><button className="btn btn-success" style={{fontSize:'18px'}}onClick={() => SelectUser(propo._id)}>Yes</button></p>            
                     </div>
                     </div>
                   ))}
