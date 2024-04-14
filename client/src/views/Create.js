@@ -111,7 +111,22 @@ const Create = () => {
       setLoading(false);
       return;
     }
-
+    
+    // Check if either job description is provided
+    if (!jobDescription) {
+      toast.error("Please provide Job Description.", {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "dark",
+      });
+      setLoading(false);
+      return;
+    }
     // Check if either job description or description is provided
     if (!jobDescription && !desc) {
       toast.error("Please provide either Job Description or Description.", {
@@ -302,7 +317,7 @@ const Create = () => {
             ></textarea>
           </div>
           <div className="mb-3">
-            <label className="form-label">Job Description:</label>
+            <label className="form-label">Job Description <span style={{ color: "red" }}>*</span>:</label>
 
             <Upload handleUpload={handleUpload} saveBtn_State={setDisable} />
           </div>
@@ -310,8 +325,9 @@ const Create = () => {
           <div className="mb-3">
             <div className="d-flex">
               <div className="me-3">
-                <label className="form-label">Pay (in Rs):</label>
+                <label className="form-label">Pay (Rs):</label>
                 <input
+                  style={{ width: "80%" }}
                   type="number"
                   className="form-control pay-textarea"
                   min="0"
@@ -322,7 +338,7 @@ const Create = () => {
               </div>
               <div>
                 <label className="form-label">
-                  Duration (In weeks) <span style={{ color: "red" }}>*</span>:
+                  Duration(weeks) <span style={{ color: "red" }}>*</span>:
                 </label>
                 <input
                   type="number"
@@ -336,6 +352,7 @@ const Create = () => {
               </div>
             </div>
           </div>
+
           <div className="mb-3">
             <label className="form-label">
               {" "}

@@ -233,3 +233,71 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
     gap: 10px;
 }
+  
+@media (max-width: 767px) {
+
+  /* Apply-form2 adjustments */
+  .apply-form2 {
+    padding: 10%; /* Reduce padding for smaller screens */
+  }
+
+  /* Apply-details adjustments */
+  .apply-details {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .apply-details p{
+    font-size: 16px;
+  }
+  /* Form-group2 adjustments */
+  .form-group2 {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  /* Project items adjustments */
+  .project-item2 {
+    flex: 0 0 100%; /* Full width on smaller screens */
+    margin-left: 5px; /* Reduce left margin for smaller screens */
+    margin-right: 5px; /* Reduce right margin for smaller screens */
+    margin-bottom: 10px; /* Reduce bottom margin for smaller screens */
+    border-radius: 30px; /* Reduce border radius for more compact look */
+  }
+
+  /* Button adjustments */
+  .btn1,
+  .btn2 {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  /* Adjust .shape elements */
+  .shape {
+    padding: 10px; /* Reduce padding for smaller screens */
+    margin: 5px; /* Reduce margin for smaller screens */
+  }
+  /* Target the shape2 container */
+  .shape2 {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    margin-right: 0; /* Remove margin-right */
+  }
+
+  /* Target the shape elements */
+  .shape2 .shape {
+    margin-right: 0; /* Remove margin-right */
+    margin-bottom: 1rem; /* Add margin-bottom for spacing between sections */
+
+    /* Skills container styling */
+  .skills {
+    display: block; /* Display skills as block elements */
+    margin-bottom: 1rem; /* Add margin-bottom for spacing between skills */
+  }
+
+  /* Badge styling for mobile view */
+  .skills .badge {
+    display: block; /* Display each badge as a block element */
+    margin-bottom: 0.5rem; /* Add margin-bottom between each badge */
+    margin-right: 0; /* Remove right margin */
+  }
+  }
+}

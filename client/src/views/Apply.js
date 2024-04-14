@@ -147,7 +147,7 @@ const Apply = () => {
   return (
     <div>
       <Navbar />
-      <div className="apply-form3">
+      <div className="apply-form3" style={{ paddingLeft: "10%" }}>
         <div className="d-flex justify-content-between align-items-left mb-3">
           <div className="col-auto">
             <button className="btn btn-link" onClick={goBack}>
@@ -158,68 +158,67 @@ const Apply = () => {
         <div className="apply-details" style={{ marginBottom: "0" }}>
           {project !== null ? (
             <div>
-  <h1 style={{marginLeft:'1rem'}}>{title}</h1>
-  <div>
-   <p style={{ fontSize: '1.25rem', margin: '1rem' }}>Owner: <b>{project.alumni_name}</b> </p>
-   <p style={{ fontSize: '1.25rem', margin: '1rem' }}>Email: {project.alumni_email}</p> 
-   </div>
-  
-  
-  <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between',marginBottom: '1rem' }}>
-    <div className="shape" style={{ flex: 1, marginRight: '1rem' }}>
-      <h3>Description</h3>
-      <p style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{project.description}</p>
-      <h2>
-        <button
-          className="btn2 btn-success" style={{backgroundColor:'transparent',color:'black',border:'1px solid black',fontSize:'16px'}}
-          onClick={() => window.open(project.jobDescription, '_blank')}
-        >
-          Job Description
-        </button>
-      </h2>
-    </div>
-    <div className="shape2">
-    <div className="shape" style={{ marginRight: '1rem' }}>
-      <p style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>
-      <h3>Pay</h3>
-      <b>{project.pay===0?(<><b>Rs {project.pay}</b></>):(<>Experience</>)}</b>
-      </p>
-      </div>
-      <div className="shape" style={{ marginRight: '1rem' }}>
-      <p style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>
-      <h3>Duration</h3>
-      <b>{project.duration} weeks</b>
-      </p>
-    </div>
-    
-    <div className="shape">
-    <h3>Skills</h3>
+              <h1 style={{ marginLeft: '1rem' }}>{title}</h1>
+              <div>
+                <p style={{ margin: '1rem' }}>Owner: <b>{project.alumni_name}</b> </p>
+                <p style={{ margin: '1rem' }}>Email: {project.alumni_email}</p>
+              </div>
 
-      <div className="skills">
-        {project.skills.map((skill, index) => (
-          <p
-            key={index}
-            className="badge"
-            style={{
-              backgroundColor: '#ffffff',
-              borderRadius: '30px',
-              color: '#64556D',
-              fontSize: '1.25rem',
-              fontWeight: 'lighter',
-              display: 'inline-block',
-              marginBottom: '0.5rem',
-              marginRight: '0.5rem',
 
-            }}
-          >
-            {skill}
-          </p>
-        ))}
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: '1rem' }}>
+                <div className="shape" style={{ flex: 1, marginRight: '1rem' }}>
+                  <h3>Description</h3>
+                  <p style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{project.description}</p>
+                  <h2>
+                    <button
+                      className="btn2 btn-success" style={{ backgroundColor: 'transparent', color: 'black', border: '1px solid black', fontSize: '16px' }}
+                      onClick={() => window.open(project.jobDescription, '_blank')}
+                    >
+                      Job Description
+                    </button>
+                  </h2>
+                </div>
+                <div className="shape2">
+                  <div className="shape" style={{ marginRight: '1rem' }}>
+                    <p style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>
+                      <h3>Pay</h3>
+                      <b>{project.pay === 0 ? (<><b>Rs {project.pay}</b></>) : (<>Experience</>)}</b>
+                    </p>
+                  </div>
+                  <div className="shape" style={{ marginRight: '1rem' }}>
+                    <p style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>
+                      <h3>Duration</h3>
+                      <b>{project.duration} weeks</b>
+                    </p>
+                  </div>
+                  <div className="shape">
+                    <h3>Skills</h3>
+
+                    <div className="skills">
+                      {project.skills.map((skill, index) => (
+                        <p
+                          key={index}
+                          className="badge"
+                          style={{
+                            backgroundColor: '#ffffff',
+                            borderRadius: '30px',
+                            color: '#64556D',
+                            fontSize: '1.25rem',
+                            fontWeight: 'lighter',
+                            display: 'inline-block',
+                            marginBottom: '0.5rem',
+                            marginRight: '0.5rem',
+
+                          }}
+                        >
+                          {skill}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="spinner-border" role="status">
               <span className="visually-hidden">Loading...</span>
@@ -231,9 +230,9 @@ const Apply = () => {
           className="apply-form2"
           style={{ marginTop: "0" }}
         >
-         
+
           <div>
-            <label className="form-label2" style={{marginLeft:'1rem'}}>
+            <label className="form-label2" style={{ marginLeft: '1rem' }}>
               SOP: Your Proposal to help your candidature:
             </label>
             <textarea

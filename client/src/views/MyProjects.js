@@ -8,6 +8,7 @@ import Navbar from "./NavbarHandlers.js";
 import "../views/global.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Upload from "../components/Upload";
 import "../views/myprojects.css";
 
 const MyProjects = () => {
@@ -15,6 +16,7 @@ const MyProjects = () => {
   const id = localStorage.getItem("idToken");
   const [loadingProjects, setLoadingProjects] = useState(true);
   const [projects, setProjects] = useState([]);
+  const [Save_active, setDisable] = useState(false);
 
   useEffect(() => {
     getProjects();
@@ -180,9 +182,26 @@ const MyProjects = () => {
   };
 
   const handlePayChange = (e, projectId) => {
+    const newPay = e.target.value;
+    // Ensure the new pay is not less than 0
+    if (newPay < 0) {
+      // Display an error message or handle the situation accordingly
+      toast.error("Pay cannot be less than 0", {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "dark",
+      });
+      return;
+    }
+
     const newProjects = projects.map((project) => {
       if (project._id === projectId) {
-        return { ...project, pay: e.target.value };
+        return { ...project, pay: newPay };
       }
       return project;
     });
@@ -190,9 +209,25 @@ const MyProjects = () => {
   };
 
   const handleDurationChange = (e, projectId) => {
+    const newDuration = e.target.value;
+    // Ensure the new pay is not less than 0
+    if (newDuration < 0) {
+      // Display an error message or handle the situation accordingly
+      toast.error("Duration cannot be less than 0", {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "dark",
+      });
+      return;
+    }
     const newProjects = projects.map((project) => {
       if (project._id === projectId) {
-        return { ...project, duration: e.target.value };
+        return { ...project, duration: newDuration };
       }
       return project;
     });
@@ -203,6 +238,16 @@ const MyProjects = () => {
     const newProjects = projects.map((project) => {
       if (project._id === projectId) {
         return { ...project, deadline: e.target.value };
+      }
+      return project;
+    });
+    setProjects(newProjects);
+  };
+
+  const handleJobDescriptionUpload = (url, projectId) => {
+    const newProjects = projects.map((project) => {
+      if (project._id === projectId) {
+        return { ...project, jobDescription: url };
       }
       return project;
     });
@@ -270,6 +315,21 @@ const MyProjects = () => {
                               handleDescriptionChange(e, project._id)
                             }
                           ></textarea>
+                        </div>
+                        <div className="form-group">
+                          <label htmlFor="jobDescription" className="form-label3">
+                            Job Description
+                          </label>
+                          <button
+                            className="btn2 btn-success" style={{ backgroundColor: 'transparent', color: 'black', border: 'solid black', fontSize: '16px' }}
+                            onClick={() => window.open(project.jobDescription, '_blank')}
+                          >
+                            View Current
+                          </button>
+                          <Upload
+                            handleUpload={(url) => handleJobDescriptionUpload(url, project._id)}
+                            saveBtn_State={setDisable}
+                          />
                         </div>
                         <div className="form-group">
                           <label htmlFor="pay" className="form-label3">

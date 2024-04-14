@@ -1,32 +1,49 @@
-/* styles.css */
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  .apply-form {
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 5%; /* Adjust padding for better spacing */
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
 
+  .form-control {
+    width: 100%; /* Make form fields full width on smaller screens */
+  }
+
+  .btn1 {
+    max-width: none; /* Remove max-width */
+    margin-top: 10px; /* Adjust top margin */
+    margin-bottom: 10px; /* Adjust bottom margin */
+  }
+}
+
+/* Base styles for both desktop and mobile */
 .profile-button {
   width: 45px;
   height: 45px;
-  border-radius: 50%; /* Makes the button circular */
-  border: 2px solid transparent; /* Initially transparent border */
-  transition: border-color 0.3s; /* Transition effect for border color change */
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 
 .profile-button:hover {
   background-color: transparent;
-  border-color: white; /* Remove blue fill on hover */
+  border-color: white;
 }
 
-
 body {
-  font-family: 'Gilroy', sans-serif; 
+  font-family: 'Gilroy', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Gilroy-Bold', sans-serif; /* Apply Gilroy font to all headings */
+  font-family: 'Gilroy-Bold', sans-serif;
 }
 
 .apply-form {
   display: flex;
   flex-direction: column;
-  align-items:left;
-  padding: 7%;/*padding of whole form*/
+  align-items: left;
+  padding: 7%; /* Padding of whole form */
   margin-left: 200px; /* Add padding to the whole form */
 }
 
@@ -49,72 +66,60 @@ h1, h2, h3, h4, h5, h6 {
 .form-control {
   width: 80%;
   height: 150px;
-  padding: 20px; /* Adjust padding for form fields */
+  padding: 20px;
   background: #E7EEF3;
   border-radius: 16px;
   border: none;
-  resize: vertical; 
+  resize: vertical;
 }
 
 .title-textarea {
-  height: 60px; /* Adjust height as needed */
+  height: 60px;
 }
 
 .desc-textarea {
-  height: 180px; /* Adjust height as needed */
+  height: 180px;
 }
 
-.pay-textarea {
-  height: 60px; /* Adjust height as needed */
-  width: fit-content;
-  border-radius: 12px;
-}
-
+.pay-textarea,
 .duration-textarea {
-  height: 60px; /* Adjust height as needed */
+  height: 60px;
   width: fit-content;
   border-radius: 12px;
-
-
 }
 
 .d-flex {
   display: flex;
   align-items: center;
-  width: auto; /* Adjust width as needed */
-  height: auto; /* Adjust height as needed */
-  margin-bottom: 10px; /* Adjust margin as needed */
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .d-flex .form-control {
-  /* Additional styling for the input field */
   width: auto;
-  height: 30px; /* Adjust width as needed */
+  height: 30px;
 }
 
 .d-flex .btn {
-  /* Additional styling for the remove button */
-  margin-left: 20px; /* Adjust margin as needed */
- 
+  margin-left: 20px;
 }
+
 .btn1 {
-  color: #fff; /* Button text color */
-  background-color: rgb(158, 129, 255); /* Change button color on hover */
-  padding: 10px 20px; /* Adjust padding as needed button size */
+  color: #fff;
+  background-color: rgb(158, 129, 255);
+  padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
   font-size: 16px;
   max-width: 160px;
-  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  transition: background-color 0.3s;
   margin-top: 20px;
   margin-bottom: 20px;
   border: none;
   display: block;
- 
 }
 
 .btn1:hover {
-  background-color: rgb(143, 57, 255); /* Change button color on hover */
-  color: #fff; /* Button text color */
-
+  background-color: rgb(143, 57, 255);
 }

@@ -1,12 +1,39 @@
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  .signin-container {
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .logo {
+    width: 80%; /* Adjust logo width for smaller screens */
+    max-width: 300px; /* Limit maximum width */
+    margin-bottom: 40px; /* Reduce margin between logo and button */
+  }
+
+  .google-button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    max-width: 250px; /* Reduce maximum width for better fit */
+    font-size: 14px; /* Decrease font size for better readability */
+  }
+
+  .google-button img {
+    width: 35px; /* Decrease Google icon size */
+    height: 35px;
+    margin-right: 8px; /* Reduce margin between icon and text */
+  }
+}
+
+/* Base styles for both desktop and mobile */
 .signin-container {
   background-image: url("../assets/bg.svg");
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
-  flex-direction: column; /* Change to column direction to stack items vertically */
+  flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
+  padding: 40px; /* Add padding for better spacing */
 }
 
 .signin-content {
@@ -14,36 +41,37 @@
 }
 
 .logo {
-  width: 1000px; /* Increase logo size */
+  width: 100%; /* Ensure logo takes full width of container */
   height: auto;
   margin-bottom: 60px;
-  display: block; /* Increase margin between logo and button */
+  display: block;
 }
+
 .google-button {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
-  padding: 10px 20px; /* Adjust padding for pill shape */
-  border-radius: 50px; /* Use a large value for border-radius to create a pill shape */
+  padding: 10px 20px;
+  border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
-  display: flex; /* Use flexbox to align items */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  max-width: 300px; /* Set max-width for better responsiveness */
-  margin: 0 auto; /* Center horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  margin: 0 auto;
   transition: background-color 0.3s ease;
 }
 
 .google-button img {
-  width: 45px; /* Adjust Google icon size */
+  width: 45px;
   height: 45px;
-  margin-right: 10px; /* Add margin between icon and text */
+  margin-right: 10px;
 }
 
 .google-button span {
-  flex: 1; /* Allow the text to take up remaining space */
-  text-align: center; /* Center-align the text */
+  flex: 1;
+  text-align: center;
 }
 
 .google-button:hover {
@@ -51,5 +79,5 @@
 }
 
 .google-button:hover img {
-  filter: brightness(1); /* Reset brightness of icon on hover */
+  filter: brightness(1);
 }
