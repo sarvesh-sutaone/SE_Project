@@ -87,7 +87,7 @@ const ViewMySelectedProjects = () => {
                             backgroundColor: '#F5F2F7',
                             borderRadius: '30px',
                             color: '#64556D',
-                            fontSize: '1.5rem',
+                            fontSize: '1.2rem',
                             fontWeight: 'lighter',
                             display: 'inline-block',
                             marginRight: '0.5rem',

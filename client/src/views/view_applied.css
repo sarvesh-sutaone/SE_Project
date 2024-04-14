@@ -9,36 +9,39 @@
 
 
   @media (max-width: 767px) {
-    .project-item1 {
+    .project-item {
       flex-basis: calc(100% - 1rem); /* Single card per row on smaller screens */
     }
   }
   
   .project-item-content {
-    padding: 2rem;
+    padding: 1rem;
     text-align: left;
     font-size: 1.5rem;
     font-weight: regular;
     color: #21003a;
   }
   
-  .project-item1 h3 {
+  .project-item h3 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     margin-top: 0;
   }
   
-  .project-item1 p {
+  .project-item p {
     margin: 1rem 0;
+    font-size: 1.5rem;
   }
   
-  .project-item1 .skills {
+  .project-item .skills {
     display: flex;
+    flex-wrap: wrap;
   }
   
-  .project-item1 .skills .badge {
+  .project-item .skills .badge {
     margin-right: 0.5rem;
+    margin-top: 0.5rem;
   }
   
   .apply-btn-container {

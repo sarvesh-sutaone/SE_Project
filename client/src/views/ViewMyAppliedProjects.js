@@ -114,11 +114,11 @@ const ViewMyAppliedProjects = () => {
               <ul className="project-list">
                 {projects.length > 0 ? (
                   projects.map((prj) => (
-                    <div key={prj._id} className="project-item">
+                    <div key={prj._id} className="project-item" style={{minWidth: "350px"}}>
                       <div className="project-item-content">
                         <h3>{prj.title}</h3>
-                        <p>{prj.description}</p>
-                        <p>
+                        <p style={{ fontSize: "1.2rem"}}>{prj.description}</p>
+                        <p style={{ fontSize: "1.2rem"}}>
                           <b>Pay</b>: {prj.pay?(<><b>Rs {prj.pay}</b></>):(<>Experience</>)} &nbsp; <b>Duration</b>: {prj.duration} weeks
                         </p>
   
@@ -132,7 +132,7 @@ const ViewMyAppliedProjects = () => {
                                   backgroundColor: '#F5F2F7',
                                   borderRadius: '30px',
                                   color: '#64556D',
-                                  fontSize: '1.5rem',
+                                  fontSize: '1.2rem',
                                   fontWeight: 'lighter',
                                   display: 'inline-block'
                                 }}
@@ -173,32 +173,33 @@ const ViewMyAppliedProjects = () => {
               <ul className="project-list">
                 {rejects.length > 0 ? (
                   rejects.map((prj) => (
-                    <div key={prj._id} className="project-item">
+                    <div key={prj._id} className="project-item" style={{minWidth: "350px"}}>
                       <div className="project-item-content">
                         <h3>{prj.title}</h3>
-                        <p>{prj.description}</p>
-                        <p>
+                        <p style={{ fontSize: "1.2rem"}}>{prj.description}</p>
+                        <p style={{ fontSize: "1.2rem"}}>
                           <b>Pay</b>: {prj.pay} &nbsp; <b>Duration</b>: {prj.duration} weeks
                         </p>
   
                         {prj.skills.length > 0 ? (
                           <div className="skills">
+                            <ul className="list-inline">
                             {prj.skills.map((skill, index) => (
-                              <p
+                              <li
                                 key={index}
-                                className="badge"
+                                className="badge me-1"
                                 style={{
                                   backgroundColor: '#F5F2F7',
                                   borderRadius: '30px',
                                   color: '#64556D',
-                                  fontSize: '1.5rem',
+                                  fontSize: '1.2rem',
                                   fontWeight: 'lighter',
-                                  display: 'inline-block'
                                 }}
                               >
                                 {skill}
-                              </p>
-                            ))}
+                              </li>
+                              ))}
+                            </ul>
                           </div>
                         ) : (
                           "No specific skill requirement"

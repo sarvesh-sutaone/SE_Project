@@ -2,31 +2,58 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 5rem; /* Adjust the left and right margins as needed */
+  margin: 0 5rem;
+  /* Adjust the left and right margins as needed */
 }
 
 .project-item2 {
-  flex: 0 0 calc(50% - 1rem); /* Two cards per row */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  /* Take up full width */
+  max-width: calc(50% - 1rem);
+  /* Maximum width for two items per row */
+  min-width: 400px;
   background-color: #ffffff;
   border: 1px solid #2d0064;
   border-radius: 30px;
-  margin-bottom: 2rem; /* Adjust bottom margin as needed */
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  margin-bottom: 2rem;
+  /* Adjust bottom margin as needed */
+  box-sizing: border-box;
+  /* Ensure padding is included in width calculation */
   margin-left: 50px;
   margin-right: 50px;
 
 }
 
 @media (max-width: 767px) {
+  .container {
+    margin: 0 1rem;
+    /* Adjust the container margin for smaller screens */
+  }
+
   .project-item2 {
-    flex-basis: calc(100% - 1rem); /* Single card per row on smaller screens */
+    flex-basis: 100%;
+    /* Take up the full width */
+    max-width: 100%;
+    /* Limit the max width to avoid overflow */
+    margin-left: 0;
+    /* Remove left margin */
+    margin-right: 0;
+    /* Remove right margin */
+    padding: 1rem;
+    /* Reduce padding */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width */
   }
 }
 
 .project-item-content2 {
   padding: 2rem;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: regular;
   color: #21003a;
 }
@@ -52,7 +79,8 @@
 
 .apply-btn-container {
   align-self: flex-start;
-  margin-top: auto; /* Align the button to the bottom */
+  margin-top: auto;
+  /* Align the button to the bottom */
 }
 
 h1.with-margin2 {

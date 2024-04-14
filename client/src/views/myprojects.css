@@ -111,6 +111,39 @@ p {
 /* Media query for mobile devices */
 @media (max-width: 767px) {
   /* Adjust padding for .apply-form3 */
+
+  .project-container2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    max-width: 100%; /* Ensure container takes up full width */
+    margin: 0; /* Remove margin to prevent overflow */
+    padding: 0; /* Adjust padding if necessary */
+  }
+
+  /* Mobile styles for project item 2 */
+  .project-item2 {
+    flex-basis: calc(100% - 1rem); /* Take up the full width of the container */
+    min-width: 100%; /* Ensure minimum width covers the full screen */
+    padding: 0.5rem; /* Adjust padding as needed */
+    margin: 0.5rem 0; /* Add margin for spacing */
+  }
+
+  .project-item2 p {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust child elements for better display on mobile */
+  .project-item2 .skills {
+    display: flex;
+    flex-wrap: wrap; /* Change to column direction */
+    margin-bottom: 1rem; /* Add margin for spacing */
+  }
+
+  /* Adjust margin for skill badges */
+  .project-item2 .skills .badge {
+    margin: 0.5rem 0; /* Adjust margins for vertical arrangement */
+  }
   .apply-form3 {
     padding-left: 20px;
     padding-right: 20px;
