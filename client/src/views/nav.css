@@ -48,8 +48,16 @@
 }
 
 /* Adjustments for collapsed navbar */
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
     .navbar-brand {
-        margin-left: 0; /* Reset margin-left */
+        font-family: 'Space Quest', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 43px;
+        color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: row;
+        margin-left: 0; /* Adjusted margin-left */
     }
 }

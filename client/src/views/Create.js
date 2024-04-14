@@ -341,6 +341,7 @@ const Create = () => {
                   Duration(weeks) <span style={{ color: "red" }}>*</span>:
                 </label>
                 <input
+                  style={{ width: "80%" }}
                   type="number"
                   className="form-control duration-textarea"
                   value={duration}

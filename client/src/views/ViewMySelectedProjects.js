@@ -68,6 +68,12 @@ const ViewMySelectedProjects = () => {
                 <div className="project-item-content2">
                   <h2>{prj.title}</h2>
                   <p>{prj.description}</p>
+                  <button
+                      className="btn2 btn-success" style={{ backgroundColor: 'transparent', color: 'black', border: '1px solid black', fontSize: '16px' }}
+                      onClick={() => window.open(prj.jobDescription, '_blank')}
+                    >
+                      Job Description
+                    </button>
                   <p>
                     <b>Pay</b>: {prj.pay} &nbsp; <b>Duration</b>: {prj.duration} weeks
                   </p>
