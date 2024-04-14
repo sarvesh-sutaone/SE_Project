@@ -114,7 +114,7 @@ const Profile = () => {
       <Navbar/>
       <div className='apply-form3'>
         <div className="d-flex justify-content-between align-items-left mb-3">
-          <div className="col-auto" style={{ paddingRight: '900px', backgroundColor: '#fff' }}>
+          <div className="col-auto" style={{ paddingRight: '10rem', backgroundColor: '#fff' }}>
             <button className="btn btn-link" onClick={goBack}>
               <BsChevronLeft size={24} />
             </button>
