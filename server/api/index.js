@@ -13,18 +13,11 @@ const convoRoutes = require("../routes/conversationRoutes");
 const reportRoutes = require("../routes/reportRoutes");
 const adminRoutes = require("../routes/adminRoutes");
 app.use(express.json());
-const AWS = require("aws-sdk");
 
 app.use(cors());
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-});
-
-AWS.config.update({
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  region: process.env.AWS_REGION, // Set your AWS region
 });
 
 mongoose.connect(process.env.DATABASE_URL);
